@@ -1,3 +1,4 @@
+#-*-coding:utf8-*-
 class MergeSort(object):
 
     def __init__(self, numbers):
@@ -38,6 +39,6 @@ class MergeSort(object):
         while j <= high:
             b.append(self.numbers[j])
             j += 1
-
+        #覆盖原数组相同位置的数据
         for idx, val in enumerate(b):
             self.numbers[low+idx]  = val
